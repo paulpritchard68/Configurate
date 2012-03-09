@@ -1,0 +1,10 @@
+Configurate
+===========
+I tend to try and stick to application defaults as far as possible, but not obsessively. 
+
+So this is a collection of config files that set up tools to suit me. 
+
+
+~/.vimrc
+--------
+The Vim config file. 
