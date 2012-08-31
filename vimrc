@@ -17,6 +17,13 @@ set tw=500
 set ai "Auto indent
 set si "Smart indet
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Colours and fonts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax enable
+
+colorscheme default
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Twitvim
 " Config settings to use TwitVim with Identi.ca
