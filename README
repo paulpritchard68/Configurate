@@ -1,8 +1,8 @@
 Configurate
 ===========
-I tend to try and stick to application defaults as far as possible, but not obsessively. 
+I tend to try and stick to application defaults as far as possible, but not obsessively, and if an application can be configured to suit me better it would be rather foolish to ignore the possibilities.
 
-So this is a collection of config files that set up tools to suit me. 
+Configurate, therefore, is a collection of config files and other scripts that configure the tools I use so that they suit me.
 
 
 ~/.vimrc
