@@ -12,6 +12,7 @@ if [ "$PS1" ]; then
 fi
 
 # Remove the irritating interactive aliases
+# Frugalware specific
 unalias mv
 unalias rm
 unalias cp
