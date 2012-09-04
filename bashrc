@@ -23,7 +23,7 @@ export LS_OPTIONS='--color=auto -b -T 0'
 # Set prompt colour according to user
 # If id = 0 then you're root and should be in red
 if [ $EUID -eq 0 ]; then
-    PS1='\[\e[0;31m\][\u@\h \w]\$ '
+    PS1='\[\e[0;91m\][\u@\h \w]\$ '
 else
-    PS1='\[\e[0;32m\][\u@\h \w]\$ '
+    PS1='\[\e[0;92m\][\u@\h \w]\$ '
 fi
