@@ -6,6 +6,15 @@ Configurate, therefore, is a collection of config files and other scripts that c
 
 File locations
 --------------
-vimrc       should be copied to     ~/.vimrc
-bashrc      should be copied to     ~/.bashrc
-            and                     /root/.bashrc
+vimrc           should be copied to     ~/.vimrc
+bashrc          should be copied to     ~/.bashrc
+                and                     /root/.bashrc
+
+filetype.vim    should be copied to     ~/.vim
+mysyntax.vim    should be copied to     ~/.vim
+
+Notes
+-----
+filetype.vim and mysyntax.vim are included to support syntax highlighting for the IBM i and are based on files written by Martin Rowe
+The actual syntax files can be found at: http://www.dbg400.net/foswiki/bin/view/DBG400/EditingWithVim#Syntax_checking
+They will need to be downloaded to your ~/.vim folder

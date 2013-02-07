@@ -21,6 +21,8 @@ set si "Smart indet
 " Colours and fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
+set filetype=on
+so ~/.vim/mysyntax.vim
 
 colorscheme default
 
