@@ -20,6 +20,9 @@ unalias cp
 # A nicer way to ls
 export LS_OPTIONS='--color=auto -b -T 0'
 
+# Switch on 256 colour support
+export TERM=xterm-256color
+
 # Set prompt colour according to user
 # If id = 0 then you're root and should be in red
 if [ $EUID -eq 0 ]; then
