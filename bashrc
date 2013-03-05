@@ -12,10 +12,10 @@ if [ "$PS1" ]; then
 fi
 
 # Remove the irritating interactive aliases
-# Frugalware specific
-unalias mv
-unalias rm
-unalias cp
+# Frugalware specific - ignore errors if no alias exists
+unalias mv 2>/dev/null
+unalias rm 2>/dev/null
+unalias cp 2>/dev/null
 
 # A nicer way to ls
 export LS_OPTIONS='--color=auto -b -T 0'
