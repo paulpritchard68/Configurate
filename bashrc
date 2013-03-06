@@ -11,11 +11,9 @@ if [ "$PS1" ]; then
 	fi
 fi
 
-# Remove the irritating interactive aliases
-# Frugalware specific - ignore errors if no alias exists
-unalias mv || true
-unalias rm || true
-unalias cp || true
+# Consistent aliasing across distributions
+unalias -a
+alias ls='ls -l'
 
 # A nicer way to ls
 export LS_OPTIONS='--color=auto -b -T 0'
