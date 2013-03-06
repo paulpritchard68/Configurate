@@ -13,7 +13,7 @@ fi
 
 # Consistent aliasing across distributions
 unalias -a
-alias ls='ls -l'
+alias ls='ls -lX'
 
 # A nicer way to ls
 export LS_OPTIONS='--color=auto -b -T 0'
