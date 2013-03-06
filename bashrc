@@ -13,13 +13,10 @@ fi
 
 # Consistent aliasing across distributions
 unalias -a
-alias ls='ls -lX'
-
-# A nicer way to ls
-export LS_OPTIONS='--color=auto -b -T 0'
+alias ls='ls -lX --color -b -T 0'
 
 # Switch on 256 colour support
-export TERM=xterm-256color
+# export TERM=xterm-256color
 
 # Set prompt colour according to user
 # If id = 0 then you're root and should be in red
