@@ -13,7 +13,8 @@ fi
 
 # Consistent aliasing across distributions
 unalias -a
-alias ls='ls -lX --color -b -T 0'
+alias ls='ls --color -b -T 0'
+alias lsl='ls -lX --color -b -T 0'
 
 # Set prompt colour according to user
 # If id = 0 then you're root and should be in red
