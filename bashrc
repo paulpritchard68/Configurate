@@ -26,8 +26,13 @@ fi
 
 # And finally, if running interactively and not root, The Cow Speaks
 if [ $EUID -ne 0 ]; then
-    COW_PATH=/usr/share/cows
-    COW_FILES=($COW_PATH/*.cow)    
+    if [ !$COWPATH ]; then
+         COWPATH='/usr/share/cowsay/cows/'
+         if [ ! -d $COWPATH ]; then
+            COWPATH=/usr/share/cows
+         fi
+    fi
+    COW_FILES=($COWPATH/*.cow)    
     N=${#COW_FILES[@]}
     ((N=RANDOM%N))
     COW=${COW_FILES[$N]}
