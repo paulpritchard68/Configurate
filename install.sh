@@ -9,6 +9,8 @@ else
 
     # Vim
     cp vimrc ~/.vimrc
+
+    mkdir -p ~/.vim
     cp filetype.vim ~/.vim
     cp mysyntax.vim ~/.vim
 
