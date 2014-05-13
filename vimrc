@@ -31,6 +31,14 @@ colorscheme default
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = '\'
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Functions
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! TrimWhiteSpace()
+     %s/\s\+$//
+endfunction
+nnoremap <silent> <Leader>trim :call TrimWhiteSpace()<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Twitvim
 " Config settings to use TwitVim with Identi.ca
