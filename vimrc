@@ -27,11 +27,6 @@ so ~/.vim/mysyntax.vim
 colorscheme default
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Mappings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let mapleader = '\'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Trim white space
@@ -53,8 +48,10 @@ function! ListerateNumeric()
 endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" More mappings
+" Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let mapleader = '\'
+
 nnoremap <silent> <Leader>tws :call TrimWhiteSpace()<CR>
 nnoremap <silent> <Leader>lc :call ListerateCharacter()<CR>
 nnoremap <silent> <Leader>ln :call ListerateNumeric()<CR>
