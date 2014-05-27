@@ -70,8 +70,8 @@ nnoremap <silent> <leader>edi :call ReformatEDI()<CR>
 " UserID:Password refers to your Identi.ca UserID and Password
 " Vimball: http://vim.sourceforge.net/scripts/script.php?script_id=2204
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let twitvim_api_root = "http://identi.ca/api"
-let twitvim_cert_insecure = 1
+let twitvim_api_root = "https://quitter.se/api"
+let twitvim_cert_insecure = 0
 let twitvim_login = "UserID:Password"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
