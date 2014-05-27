@@ -34,10 +34,30 @@ let mapleader = '\'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Trim white space
 function! TrimWhiteSpace()
      %s/\s\+$//
 endfunction
-nnoremap <silent> <Leader>trim :call TrimWhiteSpace()<CR>
+
+" Convert a column of character values into a list
+function! ListerateCharacter()
+    %s/^/'
+    %s/\n/', 
+    %s/, $//
+endfunction
+
+" Convert a column of numeric values into a list
+function! ListerateNumeric()
+    %s/\n/, 
+    %s/, $//
+endfunction
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" More mappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <silent> <Leader>tws :call TrimWhiteSpace()<CR>
+nnoremap <silent> <Leader>lc :call ListerateCharacter()<CR>
+nnoremap <silent> <Leader>ln :call ListerateNumeric()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Twitvim
