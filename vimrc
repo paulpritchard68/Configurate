@@ -47,6 +47,13 @@ function! ListerateNumeric()
     %s/, $//
 endfunction
 
+" Reformat EDIFACT and ANSI X12 file for readability
+function! ReformatEDI()
+    %s/'/'\r/ge
+    %s/\~/\~\r/ge
+    1
+endfunction
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -55,6 +62,7 @@ let mapleader = '\'
 nnoremap <silent> <Leader>tws :call TrimWhiteSpace()<CR>
 nnoremap <silent> <Leader>lc :call ListerateCharacter()<CR>
 nnoremap <silent> <Leader>ln :call ListerateNumeric()<CR>
+nnoremap <silent> <leader>edi :call ReformatEDI()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Twitvim
