@@ -55,6 +55,11 @@ function! ReformatEDI()
     1
 endfunction
 
+" List all Warning and Error messages
+function! GrepErrors()
+    g/Warning\|Error/p
+endfunction
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -64,6 +69,7 @@ nnoremap <silent> <Leader>tws :call TrimWhiteSpace()<CR>
 nnoremap <silent> <Leader>lc :call ListerateCharacter()<CR>
 nnoremap <silent> <Leader>ln :call ListerateNumeric()<CR>
 nnoremap <silent> <leader>edi :call ReformatEDI()<CR>
+nnoremap <silent> <leader>trc :call GrepErrors()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Twitvim
