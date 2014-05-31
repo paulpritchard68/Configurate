@@ -81,6 +81,9 @@ let twitvim_api_root = "https://quitter.se/api"
 let twitvim_cert_insecure = 0
 let twitvim_login = "UserID:Password"
 
+let twitvim_browser_cmd = 'firefox'
+let twitvim_old_retweet = 1
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The Towel Day Easter Egg
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
