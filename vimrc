@@ -25,7 +25,11 @@ syntax enable
 set filetype=on
 so ~/.vim/mysyntax.vim
 
-colorscheme default
+if has("gui_running")
+    colorscheme murphy
+else
+    colorscheme default
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
