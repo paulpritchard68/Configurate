@@ -75,6 +75,13 @@ nnoremap <silent> <Leader>ln :call ListerateNumeric()<CR>
 nnoremap <silent> <leader>edi :call ReformatEDI()<CR>
 nnoremap <silent> <leader>trc :call GrepErrors()<CR>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" More Mappings: Copy and Paste
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <C-V> "+gP
+vmap <C-C> "+y
+vmap <C-X> "+x
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Twitvim
 " Config settings to use TwitVim with Identi.ca
