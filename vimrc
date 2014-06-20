@@ -27,6 +27,8 @@ so ~/.vim/mysyntax.vim
 
 if has("gui_running")
     colorscheme murphy
+    set guifont=Lucida_Console:h10
+    au GUIEnter * simalt ~x
 else
     colorscheme default
 endif
