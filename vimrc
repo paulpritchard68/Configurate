@@ -25,14 +25,6 @@ syntax enable
 set filetype=on
 so ~/.vim/mysyntax.vim
 
-if has("gui_running")
-    colorscheme murphy
-    set guifont=Lucida_Console:h10
-    au GUIEnter * simalt ~x
-else
-    colorscheme default
-endif
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -78,11 +70,20 @@ nnoremap <silent> <leader>edi :call ReformatEDI()<CR>
 nnoremap <silent> <leader>trc :call GrepErrors()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" More Mappings: Copy and Paste
+" Stuff for making vim useful in Windows
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" More Mappings: Copy and Paste
 nmap <C-V> "+gP
 vmap <C-C> "+y
 vmap <C-X> "+x
+
+if has("gui_running")
+    colorscheme murphy
+    set guifont=Lucida_Console:h10
+    au GUIEnter * simalt ~x
+else
+    colorscheme default
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Twitvim
