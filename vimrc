@@ -77,6 +77,7 @@ nmap <C-V> "+gP
 vmap <C-C> "+y
 vmap <C-X> "+x
 
+" Settings for gvim
 if has("gui_running")
     colorscheme murphy
     set guifont=Lucida_Console:h10
