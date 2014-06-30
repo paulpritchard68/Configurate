@@ -58,6 +58,18 @@ function! GrepErrors()
     g/Warning\|Error/p
 endfunction
 
+" De-cruft a DSPFFD
+function! DecruftDSPFFD()
+    1,19d
+    %g/Display File Field/d
+    %g/Record format/d
+    %g/Field text/d
+    %g/Coded Character/d
+    3,%g/Data\s\+Field/d
+    3,%g/Field\s\+Type/d
+    0
+endfunction
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -68,6 +80,7 @@ nnoremap <silent> <Leader>lc :call ListerateCharacter()<CR>
 nnoremap <silent> <Leader>ln :call ListerateNumeric()<CR>
 nnoremap <silent> <leader>edi :call ReformatEDI()<CR>
 nnoremap <silent> <leader>trc :call GrepErrors()<CR>
+nnoremap <silent> <leader>df :call DecruftDSPFFD()<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Stuff for making vim useful in Windows
