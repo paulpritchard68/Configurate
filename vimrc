@@ -67,6 +67,7 @@ function! DecruftDSPFFD()
     %g/Coded Character/d
     3,%g/Data\s\+Field/d
     3,%g/Field\s\+Type/d
+    %s/[0-9]\+\s\+[0-9]\+\s\+Both\s\+//    
     0
 endfunction
 
