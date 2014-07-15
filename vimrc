@@ -87,9 +87,11 @@ nnoremap <silent> <leader>df :call DecruftDSPFFD()<CR>
 " Stuff for making vim useful in Windows
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " More Mappings: Copy and Paste
-nmap <C-V> "+gP
-vmap <C-C> "+y
-vmap <C-X> "+x
+if has("clipboard")
+    nmap <C-V> "+gP
+    vmap <C-C> "+y
+    vmap <C-X> "+x
+endif
 
 " Settings for gvim
 if has("gui_running")
@@ -117,10 +119,12 @@ let twitvim_retweet_format = 'RD %s: %t'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The Towel Day Easter Egg
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let today = strftime("%m%d")
-if today == 0525 + 0
-    echo "Listen. It's a tough universe."  
-    echo "There's all sorts of people and things trying to do you, " . 
+if has("unix")
+    let today = strftime("%m%d")
+    if today == 0525 + 0
+        echo "Listen. It's a tough universe."  
+        echo "There's all sorts of people and things trying to do you, " . 
          \ "kill you, rip you off, everything. " 
-    echo "If you're going to survive out there, you've really got to know where your towel is."
+        echo "If you're going to survive out there, you've really got to know where your towel is."
+    endif
 endif
