@@ -71,17 +71,37 @@ function! DecruftDSPFFD()
     0
 endfunction
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Twitvim
+" Config settings to use TwitVim with Identi.ca
+" UserID:Password refers to your Identi.ca UserID and Password
+" Vimball: http://vim.sourceforge.net/scripts/script.php?script_id=2204
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let twitvim_api_root = "https://quitter.se/api"
+let twitvim_cert_insecure = 0
+let twitvim_login = "UserID:Password"
+
+let twitvim_browser_cmd = 'firefox'
+let twitvim_old_retweet = 1
+let twitvim_retweet_format = 'RD %s: %t'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = '\'
 
+" Functions
 nnoremap <silent> <Leader>tws :call TrimWhiteSpace()<CR>
 nnoremap <silent> <Leader>lc :call ListerateCharacter()<CR>
 nnoremap <silent> <Leader>ln :call ListerateNumeric()<CR>
 nnoremap <silent> <leader>edi :call ReformatEDI()<CR>
 nnoremap <silent> <leader>trc :call GrepErrors()<CR>
 nnoremap <silent> <leader>df :call DecruftDSPFFD()<CR>
+
+" TwitVim
+nnoremap <silent> <Leader>gst :FriendsTwitter<CR>
+nnoremap <silent> <Leader>gsr :RepliesTwitter<CR>
+nnoremap <silent> <Leader>gsf :RefreshTwitter<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Stuff for making vim useful in Windows
@@ -101,20 +121,6 @@ if has("gui_running")
 else
     colorscheme default
 endif
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Twitvim
-" Config settings to use TwitVim with Identi.ca
-" UserID:Password refers to your Identi.ca UserID and Password
-" Vimball: http://vim.sourceforge.net/scripts/script.php?script_id=2204
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let twitvim_api_root = "https://quitter.se/api"
-let twitvim_cert_insecure = 0
-let twitvim_login = "UserID:Password"
-
-let twitvim_browser_cmd = 'firefox'
-let twitvim_old_retweet = 1
-let twitvim_retweet_format = 'RD %s: %t'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The Towel Day Easter Egg
