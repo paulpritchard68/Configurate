@@ -103,6 +103,9 @@ nnoremap <silent> <Leader>gst :FriendsTwitter<CR>
 nnoremap <silent> <Leader>gsr :RepliesTwitter<CR>
 nnoremap <silent> <Leader>gsf :RefreshTwitter<CR>
 
+" More handy stuff
+nnoremap <silent> <leader>w :set wrap!<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Stuff for making vim useful in Windows
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
