@@ -65,6 +65,10 @@ function! DecruftDSPFFD()
     %g/Record format/d
     %g/Field text/d
     %g/Coded Character/d
+    %g/Field Level Information/d
+    %g/Referenced/d
+    %g/Library/d
+    %g/Attributes changed/d
     3,%g/Data\s\+Field/d
     3,%g/Field\s\+Type/d
     %s/[0-9]\+\s\+[0-9]\+\s\+Both\s\+//    
