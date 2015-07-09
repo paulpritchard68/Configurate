@@ -77,6 +77,17 @@ function! DecruftDSPFFD()
     0
 endfunction
 
+" Decruft an SEU source listing
+function! DecruftSEU()
+    5,$g/SEU SOURCE LISTING/d
+    5,$g/SOURCE FILE ./d
+    5,$g/MEMBER ./d
+    5,$g/SEQNBR*./d
+    %s/\d\d\/\d\d\/\d\d$//
+    call TrimWhiteSpace()
+    0
+endfunction
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Twitvim
 " Config settings to use TwitVim with Identi.ca
@@ -103,6 +114,7 @@ nnoremap <silent> <Leader>ln :call ListerateNumeric()<CR>
 nnoremap <silent> <leader>edi :call ReformatEDI()<CR>
 nnoremap <silent> <leader>trc :call GrepErrors()<CR>
 nnoremap <silent> <leader>df :call DecruftDSPFFD()<CR>
+nnoremap <silent> <leader>ds :call DecruftSEU()<CR>
 
 " TwitVim
 nnoremap <silent> <Leader>gst :FriendsTwitter<CR>
