@@ -1,0 +1,18 @@
+# This is very much a work in progress at the momemnt
+# I am still experimenting with options, so changes and additions are very likely
+
+# A Nethack configuration file
+OPTIONS=name:player
+
+# Colours
+OPTIONS=menucolors
+
+MENUCOLOR=" !C"=white
+MENUCOLOR=" !B"=white
+MENUCOLOR=" !UC"=white
+MENUCOLOR=" uncursed"=white
+MENUCOLOR=" ([-0-9]+:[-0-9]+)"=white
+MENUCOLOR=" [+-][0-9]"=white
+
+MENUCOLOR=" blessed"=cyan
+MENUCOLOR=" cursed"=red

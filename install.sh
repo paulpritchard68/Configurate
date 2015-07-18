@@ -19,4 +19,7 @@ else
 
     # A bit of cowsay
     cp randomcow.txt ~/.randomcow.txt
+
+    # Nethack
+    cp nethackrc ~/.nethackrc
 fi
