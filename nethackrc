@@ -16,3 +16,7 @@ MENUCOLOR=" [+-][0-9]"=white
 
 MENUCOLOR=" blessed"=cyan
 MENUCOLOR=" cursed"=red
+
+MENUCOLOR=" quiver"=yellow
+MENUCOLOR=" in hands"=yellow
+MENUCOLOR="being worn"=yellow
