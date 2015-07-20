@@ -18,5 +18,5 @@ MENUCOLOR=" blessed"=cyan
 MENUCOLOR=" cursed"=red
 
 MENUCOLOR=" quiver"=yellow
-MENUCOLOR=" in hands"=yellow
+MENUCOLOR=" in hand"=yellow
 MENUCOLOR="being worn"=yellow
