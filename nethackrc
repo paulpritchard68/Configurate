@@ -1,10 +1,22 @@
+# A Nethack configuration file
 # This is very much a work in progress at the momemnt
 # I am still experimenting with options, so changes and additions are very likely
 
-# A Nethack configuration file
+# Names
+OPTIONS=catname:Scratchy
+OPTIONS=dogname:Ruffertoo
 OPTIONS=name:player
+OPTIONS=fruit:tasty jalapeño
 
-# Colours
+# Useful stuff
+OPTIONS=hilite_pet
+OPTIONS=lit_corridor
+OPTIONS=pushweapon
+
+# How I did
+OPTIONS=scores:10t 2a o
+
+# Menu Colours
 OPTIONS=menucolors
 
 MENUCOLOR=" !C"=white
