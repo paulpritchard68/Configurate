@@ -117,9 +117,9 @@ nnoremap <silent> <leader>df :call DecruftDSPFFD()<CR>
 nnoremap <silent> <leader>ds :call DecruftSEU()<CR>
 
 " TwitVim
-nnoremap <silent> <Leader>gsh :FriendsTwitter<CR> "Home
-nnoremap <silent> <Leader>gsm :RepliesTwitter<CR> "Mentions
-nnoremap <silent> <Leader>gsr :RefreshTwitter<CR> "Refresh
+nnoremap <silent> <Leader>gsh :FriendsTwitter<CR>
+nnoremap <silent> <Leader>gsm :RepliesTwitter<CR>
+nnoremap <silent> <Leader>gsr :RefreshTwitter<CR>
 
 " More handy stuff
 nnoremap <silent> <leader>w :set wrap!<CR>
