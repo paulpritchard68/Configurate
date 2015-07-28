@@ -13,6 +13,7 @@ OPTIONS=pet:dog
 OPTIONS=hilite_pet
 OPTIONS=lit_corridor
 OPTIONS=pushweapon
+OPTIONS=!autopickup
 
 # How I did
 OPTIONS=scores:10t 2a o
