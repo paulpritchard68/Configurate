@@ -120,6 +120,7 @@ nnoremap <silent> <leader>ds :call DecruftSEU()<CR>
 nnoremap <silent> <Leader>gsh :FriendsTwitter<CR>
 nnoremap <silent> <Leader>gsm :RepliesTwitter<CR>
 nnoremap <silent> <Leader>gsr :RefreshTwitter<CR>
+nnoremap <silent> <Leader>gsp :PosttoTwitter<CR>
 
 " More handy stuff
 nnoremap <silent> <leader>w :set wrap!<CR>
