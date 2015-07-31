@@ -138,8 +138,9 @@ endif
 " Settings for gvim
 if has("gui_running")
     colorscheme murphy
-    set guifont=Lucida_Console:h10
+    set guifont=Consolas:h10
     au GUIEnter * simalt ~x
+    set wrap
 else
     colorscheme default
 endif
