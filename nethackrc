@@ -14,6 +14,7 @@ OPTIONS=hilite_pet
 OPTIONS=lit_corridor
 OPTIONS=pushweapon
 OPTIONS=!autopickup
+OPTIONS=color
 
 # How I did
 OPTIONS=scores:10t 2a o
