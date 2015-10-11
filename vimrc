@@ -142,7 +142,7 @@ if has("gui_running")
     au GUIEnter * simalt ~x
     set wrap
 else
-    colorscheme default
+    colorscheme slate
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
