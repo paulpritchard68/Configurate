@@ -102,6 +102,9 @@ let twitvim_browser_cmd = 'firefox'
 let twitvim_old_retweet = 1
 let twitvim_retweet_format = 'RD %s: %t'
 
+let twitvim_filter_enable = 1
+let twitvim_filter_regex = 'favorited something by'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
