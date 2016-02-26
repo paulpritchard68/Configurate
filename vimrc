@@ -105,6 +105,7 @@ let twitvim_retweet_format = 'RD %s: %t'
 let september_regexes = [
      \ 'favorited something by',
      \ '/shitposter\.club/',
+     \ '@internetofshit',
      \ ]
 
 let twitvim_filter_enable = 1
