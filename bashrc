@@ -16,6 +16,9 @@ unalias -a
 alias ls='ls --color -b -T 0'
 alias lsl='ls -lX --color -b -T 0'
 
+# Environment variables
+export VISUAL="vim"
+
 # Set prompt colour according to user
 # If id = 0 then you're root and should be in red
 if [ $EUID -eq 0 ]; then
