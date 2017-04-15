@@ -133,6 +133,8 @@ nnoremap <silent> <Leader>gsp :PosttoTwitter<CR>
 
 " More handy stuff
 nnoremap <silent> <leader>w :set wrap!<CR>
+nnoremap <silent> <leader>ve :vsplit $MYVIMRC<CR>
+nnoremap <silent> <leader>vs :source $MYVIMRC<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Stuff for making vim useful in Windows
