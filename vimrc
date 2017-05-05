@@ -102,15 +102,6 @@ let twitvim_browser_cmd = 'firefox'
 let twitvim_old_retweet = 1
 let twitvim_retweet_format = 'RD %s: %t'
 
-let september_regexes = [
-     \ 'favorited something by',
-     \ '/shitposter\.club/',
-     \ '@internetofshit',
-     \ ]
-
-let twitvim_filter_enable = 1
-let twitvim_filter_regex = join(september_regexes, '\|')
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
