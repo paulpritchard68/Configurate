@@ -88,6 +88,12 @@ function! DecruftSEU()
     0
 endfunction
 
+" Append a semi-colon
+function! AppendSemiColon()
+    execute "normal! mqA;\<esc>`q" 
+    0
+endfunction
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Twitvim
 " Config settings to use TwitVim with Identi.ca
@@ -115,6 +121,7 @@ nnoremap <silent> <leader>edi :call ReformatEDI()<CR>
 nnoremap <silent> <leader>trc :call GrepErrors()<CR>
 nnoremap <silent> <leader>df :call DecruftDSPFFD()<CR>
 nnoremap <silent> <leader>ds :call DecruftSEU()<CR>
+nnoremap <silent> <leader>as :call AppendSemiColon()<CR>
 
 " TwitVim
 nnoremap <silent> <Leader>gsh :FriendsTwitter<CR>
