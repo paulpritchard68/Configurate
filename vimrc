@@ -25,7 +25,6 @@ set ic "ignore case
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 set filetype=on
-so ~/.vim/mysyntax.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
