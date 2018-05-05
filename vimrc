@@ -157,10 +157,13 @@ else
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" The Towel Day Easter Egg
+" Silliness
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("unix")
     let today = strftime("%m%d")
+    if today == 0504 + 0
+        echo "May the fourth be with you"
+    endif
     if today == 0525 + 0
         echo "Listen. It's a tough universe."  
         echo "There's all sorts of people and things trying to do you, " . 
