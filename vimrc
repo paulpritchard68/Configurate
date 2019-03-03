@@ -93,20 +93,6 @@ function! AppendSemiColon()
     0
 endfunction
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Twitvim
-" Config settings to use TwitVim with Identi.ca
-" UserID:Password refers to your Identi.ca UserID and Password
-" Vimball: http://vim.sourceforge.net/scripts/script.php?script_id=2204
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let twitvim_api_root = "https://quitter.se/api"
-let twitvim_cert_insecure = 0
-let twitvim_login = "UserID:Password"
-
-let twitvim_browser_cmd = 'firefox'
-let twitvim_old_retweet = 1
-let twitvim_retweet_format = 'RD %s: %t'
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
