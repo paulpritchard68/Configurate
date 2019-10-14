@@ -16,6 +16,7 @@ unalias -a
 alias ls='ls --color -b -T 0'
 alias lsl='ls -lX --color -b -T 0'
 alias weather='curl wttr.in'
+alias term='tn5250 env.TERM=IBM-3477-FC PUB400.com'
 
 # Environment variables
 export VISUAL="vim"
