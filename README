@@ -7,8 +7,6 @@ Installing the scripts
 install.sh is a very simple script to copy the files to the correct locations.
 Run it once under your normal profle and then again as root
 
-If you are using TwitVim, you will still need to go into ~/.vimrc and enter your User ID and password.
-
 Notes
 -----
 filetype.vim and mysyntax.vim are included to support syntax highlighting for the IBM i and are based on files written by Martin Rowe
