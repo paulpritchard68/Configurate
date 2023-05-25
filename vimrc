@@ -149,19 +149,3 @@ if has("gui_running")
 else
     colorscheme desert
 endif
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Silliness
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if has("unix")
-    let today = strftime("%m%d")
-    if today == 0504 + 0
-        echo "May the fourth be with you"
-    endif
-    if today == 0525 + 0
-        echo "Listen. It's a tough universe."  
-        echo "There's all sorts of people and things trying to do you, " . 
-         \ "kill you, rip you off, everything. " 
-        echo "If you're going to survive out there, you've really got to know where your towel is."
-    endif
-endif
