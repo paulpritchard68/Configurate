@@ -116,12 +116,6 @@ nnoremap <silent> <leader>df :call DecruftDSPFFD()<CR>
 nnoremap <silent> <leader>ds :call DecruftSEU()<CR>
 nnoremap <silent> <leader>as :call AppendSemiColon()<CR>
 
-" TwitVim
-nnoremap <silent> <Leader>gsh :FriendsTwitter<CR>
-nnoremap <silent> <Leader>gsm :RepliesTwitter<CR>
-nnoremap <silent> <Leader>gsr :RefreshTwitter<CR>
-nnoremap <silent> <Leader>gsp :PosttoTwitter<CR>
-
 " More handy stuff
 nnoremap <silent> <leader>w :set wrap!<CR>
 nnoremap <silent> <leader>ve :vsplit $MYVIMRC<CR>
