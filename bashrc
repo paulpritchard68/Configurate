@@ -150,5 +150,5 @@ elif [ $TODAY == 0525 ] ; then
     echo "There's all sorts of people and things trying to do you, kill you, rip you off, everything." 
     echo "If you're going to survive out there, you've really got to know where your towel is."
 else    
-    curl wttr.in/meerhout
+    curl -m 1 wttr.in/meerhout
 fi
