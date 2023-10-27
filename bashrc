@@ -138,9 +138,6 @@ ex ()
   fi
 }
 
-## More aliases
-alias book='vim ~/Documents/CWT/BookingFile.txt'
-
 ## And finally, a weather forecast
 TODAY=`date +%m%d` 
 if [ $TODAY == 0504 ] ; then
