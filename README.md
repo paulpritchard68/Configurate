@@ -1,14 +1,3 @@
-Configurate
-===========
-Configurate is a collection of config files and other scripts that configure the tools I use so that they suit me.
-
-Installing the scripts
-----------------------
-install.sh is a very simple script to copy the files to the correct locations.
-Run it once under your normal profle and then again as root
-
-Notes
------
-filetype.vim and mysyntax.vim are included to support syntax highlighting for the IBM i and are based on files written by Martin Rowe
-The actual syntax files can be found at: http://www.dbg400.net/foswiki/bin/view/DBG400/EditingWithVim#Syntax_checking
-They will need to be downloaded to your ~/.vim folder
+This Repository has moved
+=========================
+The latest version of Configurate can now be found on Codeberg at [PaulPritchard/Configurate](https://codeberg.org/PaulPritchard/Configurate).
